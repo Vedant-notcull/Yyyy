@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Archivo+Black&family=Asset&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kapakana:wght@300..400&family=Manrope:wght@200..800&family=Oi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+
+
+html{
+    width :1350px; /*change on pc*/
+}
+
+body {
+    margin: 0 auto;
+    width:1300px; /*change on pc*/
+    height :800px; /*change on pc*/
+    font-size: 15pt;
+    border: 2px solid pink;
+    overflow: auto;
+    z-index: 100;
+}
+
+.hero{
+    width:1300px; /*change on pc*/
+    height:800px; /*change on pc*/
+    overflow: auto;
+    background-color: black;
+
+}
+
+header{
+    position:fixed;
+    background-color: transparent;
+    width:1300px; /*change on pc*/
+    max-width:1300px; /*change on pc*/
+    height:100px;
+    display:flex;
+    justify-content: center;
+    padding-top:20px;
+    z-index: 200;
+    font-family: "Roboto";
+    
+}
+.logo{
+    width:70px;
+    height:60px;
+    display:flex;
+    position :fixed;
+    left:50px;
+    top:10px;
+}
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+.headbar{
+    width:10%;
+    height:42%;
+    border:0.5px solid white;
+    border-radius:30px;
+    color: white;
+    background-color: #00000029;
+    backdrop-filter: blur(22px);
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-weight: 400;
+    position: relative;
+    transform-origin: top center;
+    
+    
+    
+    
+    
+}
+
+.nav-item {
+  white-space: nowrap;
+  opacity: 1;
+  padding: 0 10px;
+  display :flex;
+  align-self:center;
+  
+}
+.hidden {
+  opacity: 0; /* will fade in on hover */
+  display:hidden;
+}
+
+
+
+.show{
+  margin-left:30px; 
+  padding-top:10px;
+  display :flex;
+  align-self: flex-start;
+
+}
+.elem{
+    opacity:1;
+}
+
+.added-to-cart{
+    width:250px;
+    height:80px  ;
+    bottom:15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:28px ;
+    font-size: 26px;
+    font-weight: 450;
+    opacity:0;
+    font-family:"Inter" ,serif;
+}
+
+
+.cart-overlay{
+    width:700px;
+    height:500px;
+    max-height: 480px;
+    position: absolute;
+    top:50px;
+    border-radius: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:15px 0px;
+    row-gap: 15px;
+}
+
+
+.cart-overlay h2{
+    margin: 0;
+    padding:0;
+}
+.cart-items{
+    display:flex;
+    flex-direction: column;
+    width:95%;
+    overflow-y: auto;
+    align-items: center;
+    row-gap: 15px;
+    min-height:350px;
+}
+.cart-card{
+    flex-shrink :0;
+    display :flex;
+    width:98%;
+    height:120px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #EFEFEF;
+    position: relative;
+    
+    border:1px solid #fff;
+    
+
+    
+    
+}
+.imgbox{
+    width:20%;
+    height:90%;
+    flex:1.4;
+    justify-content: center;
+    margin-left:15px;
+    overflow:hidden;
+    border-radius: 20px;
+
+}
+.imgbox img{
+    width :100%;
+    height:100%;
+    object-fit: cover;
+}
+.bhaji{
+    flex:2;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left:30px;
+    align-items: start;
+    row-gap: 10px;
+}
+.bhaji h3, .bhaji h4{
+    display:flex;
+    font-weight: 400;
+    margin:0;
+}
+.paisa, .kilo, .qty-btn{
+    flex:1;
+    justify-content: center;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    row-gap:10px;
+    align-items:center;
+}
+
+.qty-btn div{
+    background-color: white;
+    width :39px;
+    height:35px;
+    color:black;
+    font-size:24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:40px;
+
+    
+}
+
+
+.last-line{
+ width:90%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.delete-btn {
+    width: 50px;
+    height: 50px;
+    padding:0;
+    margin:0;
+    background-color: transparent;
+    border:none;
+}
+
+.delete-btn img, .empty-cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.place-order{
+    width:80%;
+    height:70px;
+    border:none;
+    font-size: 25px;
+    border-radius: 30px;
+    
+}
+.empty-cart{
+    width:100px;
+    height:70px;
+    overflow:hidden;
+}
+
+
+.headbar a {
+    text-decoration: none;
+    color:white;
+}
+
+.headbar a:active  {
+    outline:none ;
+    text-decoration: none;
+}
