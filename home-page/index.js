@@ -24,7 +24,7 @@ function firstPage(){
       console.log(vegetable.id)
       vegetablePart.innerHTML += `
       <div class="vegetable-box">
-        <img src="/images/vegeies/${vegetable.name}.jpg" alt="${vegetable.name}">
+        <img src="/images/vegeies/${vegetable.name.toLowerCase()}.jpg" alt="${vegetable.name}">
         <div class="info">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dicta, voluptas dolores molestiae, quia nostrum. Molestiae necessitatibus, dolore, 
             <a href="/vegetables-page/twst.html?vegetableId=${vegetable.id}">
