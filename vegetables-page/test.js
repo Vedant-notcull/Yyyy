@@ -40,10 +40,11 @@ boxPart.innerHTML = ''
 vegeName.innerHTML = matchingVege.name
 
 matchingVege.farmers.forEach((farmer)=>{
+  const fileName = matchingVege.name.toLowerCase().replace(/\s+/g, '-');
   boxPart.innerHTML += `
   <div class="big-box">
   <div class="box1">
-    <img src="/images/png-vege/${matchingVege.name}.jpg" alt="">
+    <img src="/images/png-vege/${fileName}.jpg" alt="">
   </div>
   <div class="box2">
     <div class="info1">
