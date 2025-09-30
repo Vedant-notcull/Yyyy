@@ -49,11 +49,12 @@ function secondPage() {
  vegetables.forEach((vegetable)=>{
   
   if(vegetable.boxType === "small"){ 
-   
+
+   const fileName = vegetable.name.toLowerCase().replace(/\s+/g, '-');
    vegetablePart2.innerHTML += `
     <div class="vegetable-box2">
      <!--      cucmber            -->
-     <img src="/images/vegeies/${vegetable.name}.jpg" alt="${vegetable.name}">
+     <img src="/images/vegeies/${fileName}.jpg" alt="${vegetable.name}">
      <div class="info2">
      ${vegetable.name}
        <a href="/vegetables-page/twst.html?vegetableId=${vegetable.id}">
