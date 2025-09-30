@@ -22,9 +22,10 @@ function firstPage(){
   vegetables.forEach((vegetable)=>{
     if(vegetable.boxType==="big"){
       console.log(vegetable.id)
+      const fileName = vegetable.name.toLowerCase().replace(/\s+/g, '-');
       vegetablePart.innerHTML += `
       <div class="vegetable-box">
-        <img src="/images/vegeies/${vegetable.name.toLowerCase()}.jpg" alt="${vegetable.name}">
+        <img src="/images/vegeies/${fileName}.jpg" alt="${vegetable.name}">
         <div class="info">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dicta, voluptas dolores molestiae, quia nostrum. Molestiae necessitatibus, dolore, 
             <a href="/vegetables-page/twst.html?vegetableId=${vegetable.id}">
